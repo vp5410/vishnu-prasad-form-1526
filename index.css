@@ -1,0 +1,105 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+}
+
+/* Legend Styles */
+legend {
+  padding: 1em;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  top: -2em;
+  left: 1em;
+  position: relative;
+  font-size: 25px;
+  border-radius: 5px;
+  max-width: 10em;
+  text-align: center;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin: auto;
+  margin-top: 20em;
+  max-width: 20em;
+  border-radius: 10px;
+  background-color: #eeeeee3e;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* Input, Email, and Textarea Styles */
+input[type="text"],
+#email,
+textarea {
+  border: 1px gray solid;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+/* Button Styles */
+button {
+  background-color: rgb(131, 156, 255);
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  transition: 0.15s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(55, 88, 220);
+}
+
+/* Media Queries */
+@media (min-width: 60rem) {
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    max-width: 30rem;
+  }
+
+  input[type="text"],
+  #email {
+    width: 95%;
+  }
+}
+
+@media (min-width: 70rem) {
+  .form-row {
+    display: flex;
+  }
+
+  .main-content {
+    max-width: 50rem;
+  }
+
+  input[type="text"],
+  #email {
+    width: 100%;
+  }
+}
